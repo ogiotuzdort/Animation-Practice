@@ -4,12 +4,12 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f;
-    public Animator anim; // private yerine public yaptýk
+    public Animator anim; 
     private CharacterController controller;
 
     void Start()
     {
-        // Eðer Animator boþsa otomatik bulmaya çalýþ
+       
         if (anim == null) anim = GetComponent<Animator>();
 
         controller = GetComponent<CharacterController>();
